@@ -4,7 +4,7 @@ url = "http://98.70.102.40:8080/api/auth/login"
 
 for i in range(100, 130):
     payload = {
-        "username": f"testuser{i}",
+        "username": f"testuser123",
         "password": f"testpassword{i}",
     }
     headers = {
