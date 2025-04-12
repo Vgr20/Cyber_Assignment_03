@@ -5,7 +5,7 @@ import os
 
 def upload_fake_firmware_binary():
     url = "http://98.70.102.40:8080/api/smart-home/firmware/upload"
-    binary_data = os.urandom(32)
+    binary_data = os.urandom(5_000_000)  # 5MB of random binary data
     encoded_data = base64.b64encode(binary_data).decode()
 
     payload = {
